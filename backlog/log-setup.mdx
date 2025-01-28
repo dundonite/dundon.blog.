@@ -1,0 +1,165 @@
+npx degit 'timlrx/tailwind-nextjs-starter-blog'
+vim data/siteMetadata.js
+rm -rf .github/FUNDING.yml .github/ISSUE_TEMPLATE/
+vim data/authors/default.mdx
+rm data/authors/sparrowhawk.mdx public/static/images/time-machine.jpg public/static/images/avatar.png
+
+
+  844  2025-01-28 10:36:07 npx degit 'timlrx/tailwind-nextjs-starter-blog'
+  845  2025-01-28 10:36:14 cd ..
+  846  2025-01-28 10:36:16 mkdir blog
+  847  2025-01-28 10:36:18 cd blog/
+  848  2025-01-28 10:36:20 npx degit 'timlrx/tailwind-nextjs-starter-blog'
+  849  2025-01-28 10:38:47 ls -alh
+  850  2025-01-28 10:39:08 find . -name siteMeta.js
+  851  2025-01-28 10:39:13 find . -name siteMetadata.js
+  852  2025-01-28 10:47:26 vim ~/.vimrc 
+  853  2025-01-28 10:47:33 ls -alh ~/.vim/
+  854  2025-01-28 10:47:52 mv ~/.vim/{tmp,backup}/
+  855  2025-01-28 10:48:01 tree ~/.vim
+  856  2025-01-28 10:48:17 vim next.config.js 
+  857  2025-01-28 10:50:13 find . -type d -name authors
+  858  2025-01-28 10:50:16 vim data/authors/
+  859  2025-01-28 10:51:28 rm data/authors/sparrowhawk.mdx 
+  860  2025-01-28 10:52:06 mv ../dundon.blog/old/public/assets/blog/authors/sean.png public/static/images/
+  861  2025-01-28 10:52:18 rm public/static/images/avatar.png public/static/images/sparrowhawk-avatar.jpg 
+  862  2025-01-28 10:52:32 ls data/
+  863  2025-01-28 10:52:35 ls data/blog/
+  864  2025-01-28 10:52:42 less data/blog/code-sample.mdx 
+  865  2025-01-28 10:53:10 rm data/blog/*.mdx
+  866  2025-01-28 10:53:26 mv ../dundon.blog/old/_posts/* data/blog/
+  867  2025-01-28 10:53:28 ls -alh
+  868  2025-01-28 10:53:40 ls data/blog/
+  869  2025-01-28 10:53:42 ls data/blog/nested-route/
+  870  2025-01-28 10:53:46 cat data/blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx 
+  871  2025-01-28 10:54:13 rm -rf data/blog/nested-route
+  872  2025-01-28 10:55:26 mv data/blog/hello-world.md{,x} 
+  873  2025-01-28 10:55:42 mv data/blog/the-root.md{,x}
+  874  2025-01-28 10:55:46 ls -alh
+  875  2025-01-28 10:57:21 mv ../dundon.blog/.github/ .
+  876  2025-01-28 10:57:24 ls -alh
+  877  2025-01-28 10:57:35 rm .github/FUNDING.yml 
+  878  2025-01-28 10:57:43 rm -rf .github/ISSUE_TEMPLATE/
+  879  2025-01-28 10:57:51 cat .github/workflows/pages.yml 
+  880  2025-01-28 10:58:34 diff .github/workflows/pages.yml ../dundon.blog/.github/workflows/nextjs.yml 
+  881  2025-01-28 10:59:21 vim .github/workflows/pages.yml ../dundon.blog/.github/workflows/nextjs.yml 
+  882  2025-01-28 11:00:36 cd ../dundon.blog/
+  883  2025-01-28 11:00:37 ls -alh
+  884  2025-01-28 11:00:57 rm -rf .github/ .next/ old/
+  885  2025-01-28 11:01:04 mv ../blog/* .
+  886  2025-01-27 18:42:07 npm run dev
+  887  2025-01-28 11:01:07 ls -alh ../blog/
+  888  2025-01-28 11:01:24 mv ../blog/* .* .
+  889  2025-01-28 11:01:43 ls -alh
+  890  2025-01-28 11:01:45 ls -alh ../blog/
+  891  2025-01-28 11:01:50 npm run build
+  892  2025-01-28 11:01:58 yarn
+  893  2025-01-28 11:02:11 corepack enable
+  894  2025-01-28 11:02:22 npm run dev
+  895  2025-01-27 19:31:26 tmux attach -d -t 0
+  896  2025-01-28 11:03:32 cd projects/blog/
+  897  2025-01-28 11:03:33 ls -alh
+  898  2025-01-28 11:03:40 cd ../dundon.blog/
+  899  2025-01-28 11:03:42 ls -alh
+  900  2025-01-28 11:03:44 yarn
+  901  2025-01-28 11:06:48 yarn dev
+  902  2025-01-28 11:07:21 cd ..
+  903  2025-01-28 11:07:24 mkdir blog.new
+  904  2025-01-28 11:07:51 cd blog.new/
+  905  2025-01-28 11:07:52 npx degit 'timlrx/tailwind-nextjs-starter-blog'
+  906  2025-01-28 11:08:07 touch tailwind-nextjs.mdx
+  907  2025-01-28 11:08:16 echo "npx degit 'timlrx/tailwind-nextjs-starter-blog'" >> tailwind-nextjs.mdx 
+  908  2025-01-28 11:09:10 mv ../dundon.blog/data/siteMetadata.js data/siteMetadata.js 
+  909  2025-01-28 11:09:33 echo "vim data/siteMetadata.js" >> tailwind-nextjs.mdx 
+  910  2025-01-28 11:09:50 mv tailwind-nextjs.mdx log-setup.mdx
+  911  2025-01-28 11:10:06 rm -rf .github/FUNDING.yml .github/ISSUE_TEMPLATE/
+  912  2025-01-28 11:10:13 echo "rm -rf .github/FUNDING.yml .github/ISSUE_TEMPLATE/" >> log-setup.mdx 
+  913  2025-01-28 11:10:41 mv ../dundon.blog/data/authors/default.mdx data/authors/default.mdx 
+  914  2025-01-28 11:10:54 echo "vim data/authors/default.mdx" >> log-setup.mdx 
+  915  2025-01-28 11:11:39 rm data/authors/sparrowhawk.mdx public/static/images/time-machine.jpg public/static/images/avatar.png 
+  916  2025-01-28 11:11:46 echo "rm data/authors/sparrowhawk.mdx public/static/images/time-machine.jpg public/static/images/avatar.png" >> log-setup.mdx 
+  917  2025-01-28 11:11:56 vim data/projectsData.ts 
+  918  2025-01-28 11:12:39 ls -alh .git
+  919  2025-01-28 11:12:41 ls -alh
+  920  2025-01-28 11:12:43 cat .gitignore 
+  921  2025-01-28 11:12:49 ls -alh
+  922  2025-01-28 11:12:56 yarn dev
+  923  2025-01-28 11:13:03 yarn
+  924  2025-01-28 11:13:25 yarn dev
+  925  2025-01-28 11:22:42 ls -alh
+  926  2025-01-28 11:23:03 rm data/blog/*.mdx
+  927  2025-01-28 11:23:07 ls data/blog/
+  928  2025-01-28 11:23:13 rm -rf data/blog/nested-route/
+  929  2025-01-28 11:23:44 mv ../dundon.blog/data/blog/* data/blog/
+  930  2025-01-28 11:25:15 vim data/blog/*
+  931  2025-01-28 11:27:26 vim data/blog/hello-world.mdx 
+  932  2025-01-28 11:31:41 vim data/authors/default.mdx 
+  933  2025-01-28 11:31:54 ls public/static/images/
+  934  2025-01-28 11:32:05 mv ../dundon.blog/public/static/images/sean.png public/static/images/
+  935  2025-01-28 11:39:05 vim data/headerNavLinks.ts 
+  936  2025-01-28 11:41:05 cd ..
+  937  2025-01-28 11:41:11 mv blog.new/ dundon.blog.
+  938  2025-01-28 11:41:18 cd dundon.blog./
+  939  2025-01-28 11:41:24 cd ..
+  940  2025-01-28 11:41:31 cd dundon.blog./
+  941  2025-01-28 11:41:35 git status
+  942  2025-01-28 11:41:41 git init .
+  943  2025-01-28 11:41:43 git status
+  944  2025-01-28 11:42:01 cat .devcontainer/devcontainer.json 
+  945  2025-01-28 11:48:11 vim next.config.js 
+  946  2025-01-28 11:49:36 find . type d -name api
+  947  2025-01-28 11:49:54 rm -rf app/api/
+  948  2025-01-28 11:50:43 ls -alh
+  949  2025-01-28 11:51:08 grep -Iirl '/api' components/
+  950  2025-01-28 11:51:10 grep -Iirl 'api' components/
+  951  2025-01-28 11:51:18 grep -Iirl 'newletter' components/
+  952  2025-01-28 11:51:41 grep -Iirl 'subscribe' components/
+  953  2025-01-28 11:51:45 grep -Iirl 'subscribe' .
+  954  2025-01-28 11:51:52 grep -Iirl 'subscribe' . | grep -v node_modules
+  955  2025-01-28 11:52:08 ls -alh
+  956  2025-01-28 11:52:27 grep -Iirl "Subscibe to the newsletter" .
+  957  2025-01-28 11:52:35 grep -Iirl "Enter your email" .
+  958  2025-01-28 11:52:56 vim app/layout.tsx 
+  959  2025-01-28 11:53:18 less data/siteMetadata.js 
+  960  2025-01-28 11:53:37 grep -Iirl newsletter .
+  961  2025-01-28 11:53:50 vim faq/custom-mdx-component.md 
+  962  2025-01-28 11:53:58 ls -alh
+  963  2025-01-28 11:54:07 vim app/page.tsx 
+  964  2025-01-28 11:54:14 vim components/Footer.tsx 
+  965  2025-01-28 11:54:56 vim components/*
+  966  2025-01-28 12:01:26 vim app/layout.tsx 
+  967  2025-01-28 12:02:09 grep -r '// ' components/*.tsx
+  968  2025-01-28 12:02:20 grep -r Newsletter .
+  969  2025-01-28 12:02:26 grep -rl Newsletter .
+  970  2025-01-28 12:02:37 vim app/Main.tsx 
+  971  2025-01-28 12:03:11 grep -r '// ' components/*.tsx
+  972  2025-01-28 12:03:23 vim components/MDXComponents.tsx 
+  973  2025-01-28 12:04:37 git status
+  974  2025-01-28 12:07:18 ls -alh faq/
+  975  2025-01-28 12:07:29 rm -rf faq/
+  976  2025-01-28 12:07:33 cat .env.example 
+  977  2025-01-28 12:08:00 rm .env.example 
+  978  2025-01-28 12:08:03 ls -alh
+  979  2025-01-28 12:08:18 git status
+  980  2025-01-28 12:08:24 cat LICENSE 
+  981  2025-01-28 12:08:28 rm LICENSE 
+  982  2025-01-28 12:08:29 ls -alh
+  983  2025-01-28 12:08:34 ls -l
+  984  2025-01-28 12:09:03 git commit -m "First commit"
+  985  2025-01-28 12:09:10 git branch -M main
+  986  2025-01-28 12:09:10 git remote add origin git@github.com:dundonite/dundon.blog..git
+  987  2025-01-28 12:09:10 git push -u origin main
+  988  2025-01-28 12:12:10 vim data/blog/the-root.mdx 
+  989  2025-01-28 11:43:18 yarn dev
+  990  2025-01-28 12:12:53 vim data/blog/hello-world.mdx 
+  991  2025-01-28 12:14:13 cd ../dundon.blog.
+  992  2025-01-28 12:15:02 less scripts/rss.mjs 
+  993  2025-01-28 12:15:10 vim data/siteMetadata.js 
+  994  2025-01-28 12:16:47 grep -Iirl rss.mjs .
+  995  2025-01-28 12:17:26 vim app/tag-data.json 
+  996  2025-01-28 12:18:41 vim scripts/rss.mjs 
+  997  2025-01-28 12:19:02 yarn build
+  998  2025-01-28 12:19:30 git add .
+  999  2025-01-28 12:20:08 git commit -m "Fixed RSS by s/assert/with scripts/rss.mjs:6"
+ 1000  2025-01-28 12:20:11 git push
+ 1001  2025-01-28 12:24:55 history >> log-setup.mdx 
