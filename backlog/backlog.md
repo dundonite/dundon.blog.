@@ -1,4 +1,13 @@
 - Blog setup (log-setup.md)
-- Developing with vim and tmux
+- Developing with vim and tmux (.vimrc, cmake, w|! %)
+  - https://github.com/ttroy50/cmake-examples/tree/master/01-basic
+  - https://tmuxcheatsheet.com/
 - Bootstrapberry
-
+- Diverse Environments
+  - debian on hyperv on proxmox
+  - bash on Windows
+  - Windows on Proxmox
+- Mirror mirror on the wall
+  - How others see you vs self-perception
+  - Scoliosis and that cheap fancy mirror break-in plan
+  
