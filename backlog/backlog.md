@@ -10,4 +10,4 @@
 - Mirror mirror on the wall
   - How others see you vs self-perception
   - Scoliosis and that cheap fancy mirror break-in plan
-  
+- Taking notes (Jupyter, markdown, pandoc, LaTeX, /usr/bin/pandoc --standalone --mathjax --mathml -f markdown -t html "%" > "$(echo % | sed 's/\.md$/\.html/g')")  
