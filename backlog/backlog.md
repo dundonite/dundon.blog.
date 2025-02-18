@@ -11,3 +11,4 @@
   - How others see you vs self-perception
   - Scoliosis and that cheap fancy mirror break-in plan
 - Taking notes (Jupyter, markdown, pandoc, LaTeX, /usr/bin/pandoc --standalone --mathjax --mathml -f markdown -t html "%" > "$(echo % | sed 's/\.md$/\.html/g')")  
+- The end determines the morality, not the means. Khan Academy is gamified and I love it, but I turn off Instagram notifications. Can we get people hooked on healthy habits? Can we stop cursing the techniquest to encourage habits?
